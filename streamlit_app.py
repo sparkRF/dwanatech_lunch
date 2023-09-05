@@ -1,4 +1,5 @@
 import streamlit as st
+from PIL import Image
 
 st.write('동운아나텍 점심식사 추천 페이지입니다.')
 st.write('\n')
