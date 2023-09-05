@@ -13,6 +13,7 @@ st.write('점심 맛있게 드세요!')
 st.write('\n')
 if st.button('점심 추천'):
     st.write('오늘의 점심은:')
+    st.write(df.count)
 st.write('\n')
 st.write('\n')
 if st.button('전체 메뉴 리스트'):
