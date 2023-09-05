@@ -14,6 +14,7 @@ st.write('\n')
 if st.button('점심 추천'):
     st.write('오늘의 점심은:')
     st.write(len(df))
+    st.write(df.iloc[1,2])
 st.write('\n')
 st.write('\n')
 if st.button('전체 메뉴 리스트'):
