@@ -6,3 +6,6 @@ st.write('점심 맛있게 드세요!')
 st.write('\n')
 st.button('점심 추천')
 
+image = Image.open('다운로드.png')
+
+st.image(image)
