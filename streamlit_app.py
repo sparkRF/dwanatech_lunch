@@ -9,6 +9,7 @@ image = Image.open('다운로드.png')
 st.image(image)
 
 st.write('동운아나텍 점심식사 추천 페이지입니다.')
+st.write('메뉴가 마음에 들지 않는다면 버튼을 다시 눌러보세요.')
 st.write('\n')
 st.write('점심 맛있게 드세요!')
 st.write('\n')
