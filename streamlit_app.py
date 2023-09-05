@@ -9,7 +9,7 @@ st.write('동운아나텍 점심식사 추천 페이지입니다.')
 st.write('\n')
 st.write('점심 맛있게 드세요!')
 st.write('\n')
-st.button('점심 추천')
+
 st.write('\n')
 st.write('\n')
 st.write('전체 메뉴 리스트:')
