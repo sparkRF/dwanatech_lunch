@@ -9,5 +9,5 @@ st.write('\n')
 st.write('점심 맛있게 드세요!')
 st.write('\n')
 st.button('점심 추천')
-
+st.write('\n')
 st.write('문의사항은 박세일 주임에게 연락주세요.')
