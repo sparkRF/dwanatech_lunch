@@ -22,4 +22,4 @@ st.write('\n')
 if st.button('전체 메뉴 리스트'):
     st.write(pd.DataFrame(df))
 st.write('\n')
-st.write('맛집 추천 및 관련 사항 문의는 박세일 주임에게 연락 부탁드립니다.')
+st.write('맛집 추천 및 관련 문의는 박세일 주임에게 연락 부탁드립니다.')
