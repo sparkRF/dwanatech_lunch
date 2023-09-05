@@ -12,10 +12,10 @@ st.write('\n')
 st.write('점심 맛있게 드세요!')
 st.write('\n')
 if st.button('점심 추천'):
+    index = random.randrange(0,len(df))
     st.write('오늘의 점심은:')
-    st.write(len(df))
-    st.write(df.iloc[0,1])
-    st.write(df.iloc[1,0])
+    st.write(df.iloc[index,1])
+    st.write(df.iloc[index,0])
 st.write('\n')
 st.write('\n')
 if st.button('전체 메뉴 리스트'):
