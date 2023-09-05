@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 import pandas as pd
+import random
 
 df = pd.read_csv('동운아나텍_점심메뉴.csv')
 
