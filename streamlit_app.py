@@ -14,7 +14,7 @@ if st.button('점심 추천'):
 st.write('\n')
 st.write('\n')
 if st.button('전체 메뉴 리스트'):
-    st.write('pd.DataFrame(df)')
+    st.write(pd.DataFrame(df))
 st.write('\n')
 st.write('문의사항은 박세일 주임에게 연락주세요.')
 
