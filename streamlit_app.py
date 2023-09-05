@@ -16,7 +16,7 @@ st.write('\n')
 if st.button('### 점심 추천'):
     index = random.randrange(0,len(df))
     st.write('### 오늘의 점심은:')
-    st.write(### df.iloc[index,1] + '(' + df.iloc[index,0] + ')')
+    st.write(df.iloc[index,1] + '(' + df.iloc[index,0] + ')')
 st.write('\n')
 st.write('\n')
 if st.button('전체 메뉴 리스트'):
