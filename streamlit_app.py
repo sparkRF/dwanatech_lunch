@@ -19,3 +19,6 @@ st.write(pd.DataFrame({
 }))
 st.write('\n')
 st.write('문의사항은 박세일 주임에게 연락주세요.')
+
+if st.button('점심 추천'):
+    st.write('오늘의 점심은:')
