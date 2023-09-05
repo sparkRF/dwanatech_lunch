@@ -1,2 +1,5 @@
 # dwanatech_lunch
-Happy lunch for dwanatech
+Lunch recommendation for Dongwoon anatech
+
+## V1.0.0
+Created
