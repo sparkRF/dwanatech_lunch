@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 import pandas as pd
 
-df = pd.read_csv('동운아나텍_점심메뉴.csv', encoding='cp949')
+df = pd.read_csv('동운아나텍_점심메뉴.csv')
 
 image = Image.open('다운로드.png')
 st.image(image)
