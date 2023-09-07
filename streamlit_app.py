@@ -15,19 +15,22 @@ st.write('점심 맛있게 드세요!')
 st.write('\n')
 col1, col2 = st.columns(2)
 
-with col1:
-    st.checkbox("Disable radio widget", key="disabled")
-
 with col2:
-    st.radio(
+    st.checkbox("상관없음")
+
+with col1:
+    menu = st.radio(
         "조건 선택 👇",
-        ["한식 추천", "중식 추천", "일식 추천", "양식 추천", "베트남 추천"],
+        ["한식만 추천", "중식만 추천", "일식만 추천", "양식만 추천", "베트남만 추천"],
     )
 st.write('\n')
 if st.button('점심 추천'):
-    index = random.randrange(0,len(df))
-    st.write('오늘의 점심은:')
-    st.write(df.iloc[index,1] + '(' + df.iloc[index,0] + ')')
+    if menu == "한식만 추천":
+        st.write('한식만 추천')
+    else:
+        index = random.randrange(0,len(df))
+        st.write('오늘의 점심은:')
+        st.write(df.iloc[index,1] + '(' + df.iloc[index,0] + ')')
 st.write('\n')
 st.write('\n')
 if st.button('전체 메뉴 리스트'):
