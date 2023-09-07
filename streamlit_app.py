@@ -42,7 +42,7 @@ if st.button('점심 추천'):
         st.write('오늘의 점심은:')
         st.write(df.iloc[index,1] + '(' + df.iloc[index,0] + ')')
     elif menu == "베트남만 추천":
-        index = random.randrange(16,len(df))
+        index = random.randrange(1,4)
         st.write('오늘의 점심은:')
         st.write(df.iloc[index,1] + '(' + df.iloc[index,0] + ')')
     else:
