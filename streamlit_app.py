@@ -16,7 +16,7 @@ st.write('\n')
 col1, col2 = st.columns(2)
 
 with col2:
-    st.checkbox("상관없음", key="disabled")
+    dontcare = st.checkbox("상관없음", key="disabled")
 with col1:
     menu = st.radio(
         "조건 선택 👇",
@@ -44,8 +44,9 @@ if st.button('점심 추천'):
         index = random.randrange(0,3)
         st.write('오늘의 점심은:')
         st.write(df.iloc[index,1] + '(' + df.iloc[index,0] + ')')
-    else:
+    if dontcare:
         index = random.randrange(0,len(df))
+        st.write(menu)
         st.write('오늘의 점심은:')
         st.write(df.iloc[index,1] + '(' + df.iloc[index,0] + ')')
 st.write('\n')
