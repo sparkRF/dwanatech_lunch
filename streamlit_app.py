@@ -16,8 +16,7 @@ st.write('\n')
 col1, col2 = st.columns(2)
 
 with col2:
-    st.checkbox("상관없음")
-
+    st.checkbox("상관없음", key="disabled")
 with col1:
     menu = st.radio(
         "조건 선택 👇",
