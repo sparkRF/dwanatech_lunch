@@ -13,6 +13,17 @@ st.write('메뉴가 마음에 들지 않는다면 버튼을 다시 눌러보세�
 st.write('\n')
 st.write('점심 맛있게 드세요!')
 st.write('\n')
+col1, col2 = st.columns(2)
+
+with col1:
+    st.checkbox("Disable radio widget", key="disabled")
+
+with col2:
+    st.radio(
+        "조건 선택 👇",
+        ["한식 추천", "중식 추천", "일식 추천", "양식 추천", "베트남 추천"],
+    )
+st.write('\n')
 if st.button('점심 추천'):
     index = random.randrange(0,len(df))
     st.write('오늘의 점심은:')
