@@ -59,7 +59,7 @@ if st.button('해피런치 추천'):
     if dontcare:
         index = random.randrange(0,len(hdf))
         st.write('이번 해피런치는:')
-        st.write(df.iloc[index,1] + '(' + df.iloc[index,0] + ')')
+        st.write(hdf.iloc[index,1] + '(' + hdf.iloc[index,0] + ')')
 
 st.write('\n')
 st.write('\n')
