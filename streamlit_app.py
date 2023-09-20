@@ -56,10 +56,9 @@ st.write('\n')
 
 st.write('해피런치 추천은 여기 👇')
 if st.button('해피런치 추천'):
-    if dontcare:
-        index = random.randrange(0,len(hdf))
-        st.write('이번 해피런치는:')
-        st.write(hdf.iloc[index,1] + '(' + hdf.iloc[index,0] + ')')
+    index = random.randrange(0,len(hdf))
+    st.write('이번 해피런치는:')
+    st.write(hdf.iloc[index,1] + '(' + hdf.iloc[index,0] + ')')
 
 st.write('\n')
 st.write('\n')
