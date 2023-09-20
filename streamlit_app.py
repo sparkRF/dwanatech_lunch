@@ -18,6 +18,7 @@ col1, col2 = st.columns(2)
 
 with col2:
     dontcare = st.checkbox("상관없음", key="disabled")
+    dontcare = st.checkbox("해피런치", key="disabled_h")
 with col1:
     menu = st.radio(
         "조건 선택 👇",
