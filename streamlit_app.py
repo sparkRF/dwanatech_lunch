@@ -4,6 +4,7 @@ import pandas as pd
 import random
 
 df = pd.read_csv('동운아나텍_점심메뉴.csv')
+hdf = pd.read_csv('동운아나텍_해피런치메뉴.csv')
 
 image = Image.open('다운로드.png')
 st.image(image)
@@ -17,6 +18,7 @@ col1, col2 = st.columns(2)
 
 with col2:
     dontcare = st.checkbox("상관없음", key="disabled")
+    hlunch = st.checkbox("해피런치", key="disabled")
 with col1:
     menu = st.radio(
         "조건 선택 👇",
