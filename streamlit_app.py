@@ -54,7 +54,7 @@ if st.button('점심 추천'):
 st.write('\n')
 st.write('\n')
 
-st.write(' ⭐해피런치 추천은 여기')
+st.write(' ⭐해피런치⭐ 추천은 여기')
 if st.button('해피런치 추천'):
     index = random.randrange(0,len(hdf))
     st.write('이번 해피런치는:')
