@@ -18,7 +18,6 @@ col1, col2 = st.columns(2)
 
 with col2:
     dontcare = st.checkbox("상관없음", key="disabled")
-    hlunch = st.checkbox("해피런치", key="disabled_h")
 with col1:
     menu = st.radio(
         "조건 선택 👇",
@@ -54,7 +53,25 @@ if st.button('점심 추천'):
     
 st.write('\n')
 st.write('\n')
+
+st.write('해피런치 추천은 여기 👇')
+if st.button('해피런치 추천'):
+    if dontcare:
+        index = random.randrange(0,len(hdf))
+        st.write('이번 해피런치는:')
+        st.write(df.iloc[index,1] + '(' + df.iloc[index,0] + ')')
+
+st.write('\n')
+st.write('\n')
+
 if st.button('전체 메뉴 리스트'):
     st.write(pd.DataFrame(df))
+    
 st.write('\n')
+st.write('\n')
+
+if st.button('해피런치 메뉴 리스트'):
+    st.write(pd.DataFrame(hdf))
+st.write('\n')
+
 st.write('맛집 추천 및 관련 문의는 박세일 주임에게 연락 부탁드립니다.')
