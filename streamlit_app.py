@@ -4,7 +4,6 @@ import pandas as pd
 import random
 
 df = pd.read_csv('동운아나텍_점심메뉴.csv')
-hdf = pd.read_csv('동운아나텍_해피런치메뉴.csv')
 
 image = Image.open('다운로드.png')
 st.image(image)
