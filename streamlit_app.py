@@ -67,6 +67,8 @@ st.write('\n')
 if st.button('전체 메뉴 리스트'):
     st.write('점심 메뉴:')
     st.write(pd.DataFrame(df))
+    st.write('해장 메뉴:')
+    st.write(pd.DataFrame(hjdf))
     st.write('해피런치 메뉴:')
     st.write(pd.DataFrame(hdf))
     
