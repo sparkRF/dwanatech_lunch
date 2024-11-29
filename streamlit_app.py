@@ -44,11 +44,11 @@ if st.button('점심 추천'):
         st.write('오늘의 점심은:')
         st.write(df.iloc[index,1] + '(' + df.iloc[index,0] + ')')
     elif menu == "일식만 추천":
-        index = random.randrange(6,10)
+        index = random.randrange(8,10)
         st.write('오늘의 점심은:')
         st.write(df.iloc[index,1] + '(' + df.iloc[index,0] + ')')
     elif menu == "양식만 추천":
-        index = random.randrange(3,6)
+        index = random.randrange(3,8)
         st.write('오늘의 점심은:')
         st.write(df.iloc[index,1] + '(' + df.iloc[index,0] + ')')
     elif menu == "베트남만 추천":
@@ -82,4 +82,4 @@ if st.button('전체 메뉴 리스트'):
     
 st.write('\n')
 
-st.write('맛집 추천 및 관련 문의는 박세일 주임에게 연락 부탁드립니다.')
+st.write('동운아나텍 화이팅!')
